@@ -1,6 +1,6 @@
 # Binding.Intercom
 
-![Nuget](https://img.shields.io/nuget/v/nventive.Binding.Intercom)
+![Nuget](https://img.shields.io/nuget/v/BarengoEngineering.Intercom.iOS)
 
 ## Summary
 
