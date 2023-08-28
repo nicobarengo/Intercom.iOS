@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntercomBindingiOS", "IntercomBindingiOS\IntercomBindingiOS.csproj", "{0A2893CB-8C1E-44DC-A26D-EDF521E5CA0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntercomBindingiOS.Simulator", "IntercomBindingiOS.Simulator\IntercomBindingiOS.Simulator.csproj", "{1799E577-C022-46EB-85FC-553D50B5553F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A2893CB-8C1E-44DC-A26D-EDF521E5CA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2893CB-8C1E-44DC-A26D-EDF521E5CA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2893CB-8C1E-44DC-A26D-EDF521E5CA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2893CB-8C1E-44DC-A26D-EDF521E5CA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1799E577-C022-46EB-85FC-553D50B5553F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1799E577-C022-46EB-85FC-553D50B5553F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1799E577-C022-46EB-85FC-553D50B5553F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1799E577-C022-46EB-85FC-553D50B5553F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

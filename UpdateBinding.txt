@@ -1,0 +1,1 @@
+sharpie bind -sdk iphoneos16.4 -framework ./Intercom.framework --namespace=BarengoEngineering

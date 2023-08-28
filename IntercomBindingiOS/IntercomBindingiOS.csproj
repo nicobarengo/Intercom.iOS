@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0-ios</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
+        <DebugType>Embedded</DebugType>
+        <EmbedAllSources>True</EmbedAllSources>
+        <PackageId>BarengoEngineering.Intercom.iOS</PackageId>
+        <Version>15.1.5.1</Version>
+        <Authors>Nicolas Barengo</Authors>
+        <Company>Barengo-Engineering</Company>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Intercom Binding for Xamarin.iOS (NET7)</Description>
+        <PackageProjectUrl>https://github.com/nicobarengo/Intercom.iOS</PackageProjectUrl>
+        <EmbedUntrackedSources>True</EmbedUntrackedSources>
+        <PackageIconUrl>https://raw.githubusercontent.com/nicobarengo/Intercom.iOS/main/intercom.png</PackageIconUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+        <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <NativeReference Include="../Native References/Intercom.xcframework/ios-arm64/Intercom.framework">
+        <Kind>Framework</Kind>
+        <SmartLink>False</SmartLink>
+        <LinkerFlags>-ObjC</LinkerFlags>
+        <ForceLoad>True</ForceLoad>
+        <Frameworks>Foundation UIKit</Frameworks>
+      </NativeReference>
+    </ItemGroup>
+
+</Project>
