@@ -1,6 +1,6 @@
 using ObjCRuntime;
 
-namespace BarengoEngineering
+namespace BarengoEngineering.Intercom
 {
     [Native]
     public enum ICMHelpCenterDataError : long

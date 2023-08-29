@@ -6,7 +6,6 @@
 
 The following binding are for the **Intercom SDK**.
 
-
 ## iOS
 
 Documentation for using the library inside an iOS project can be found [here](https://developers.intercom.com/docs/welcome).
@@ -19,11 +18,21 @@ To upgrade to v9.0.0 please [follow the migration guide](https://developers.inte
 
 ### How to use
 
-Add a reference to the following packages:
+Add the flowing packages to the iOS csproj
 
-- BarengoEngineering
+<PackageReference Condition="'$(Configuration)|$(Platform)' != 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS" Version="15.1.5.3" />
+<PackageReference Condition="'$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS.Simulator" Version="15.1.5.3" />
+
+Add a reference to the following package:
+
+using BarengoEngineering.Intercom;
+
+
+Clean, restore nuget packages and Build for every change of Run configuration to remove Intercom Simulator/Device binaries
+
 
 ### Update Info.plist
+
 
 When installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
 

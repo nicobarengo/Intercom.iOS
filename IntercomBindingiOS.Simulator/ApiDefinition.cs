@@ -3,7 +3,7 @@ using Foundation;
 using ObjCRuntime;
 using UserNotifications;
 
-namespace BarengoEngineering
+namespace BarengoEngineering.Intercom
 {
 	// @interface ICMUserAttributes : NSObject
 	[BaseType (typeof(NSObject))]
