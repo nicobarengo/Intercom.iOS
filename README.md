@@ -34,6 +34,12 @@ using BarengoEngineering.Intercom;
 
 Clean, restore nuget packages and Build for every change of Run configuration to remove Intercom Simulator/Device binaries
 
+If you encounter issues building, deploying or running add this to the csproj
+
+```csharp
+<Registrar>static</Registrar>
+```
+
 
 ### Update Info.plist
 
