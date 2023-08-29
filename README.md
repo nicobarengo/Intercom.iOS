@@ -20,13 +20,17 @@ To upgrade to v9.0.0 please [follow the migration guide](https://developers.inte
 
 Add the flowing packages to the iOS csproj
 
+```csharp
 <PackageReference Condition="'$(Configuration)|$(Platform)' != 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS" Version="15.1.5.3" />
 <PackageReference Condition="'$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS.Simulator" Version="15.1.5.3" />
+```
+
 
 Add a reference to the following package:
 
+```csharp
 using BarengoEngineering.Intercom;
-
+``
 
 Clean, restore nuget packages and Build for every change of Run configuration to remove Intercom Simulator/Device binaries
 
