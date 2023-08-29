@@ -30,7 +30,7 @@ Add a reference to the following package:
 
 ```csharp
 using BarengoEngineering.Intercom;
-``
+```
 
 Clean, restore nuget packages and Build for every change of Run configuration to remove Intercom Simulator/Device binaries
 
