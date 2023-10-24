@@ -237,6 +237,14 @@ namespace BarengoEngineering.Intercom
 		NativeHandle Constructor (string title, ICMHelpCenterArticle[] articles);
 	}
 
+	[Static]
+	partial interface Constants
+	{
+		// extern const NSErrorDomain _Nonnull ICMHelpCenterDataErrorDomain;
+		[Field ("ICMHelpCenterDataErrorDomain", "__Internal")]
+		NSString ICMHelpCenterDataErrorDomain { get; }
+	}
+
 	// @interface ICMHelpCenterArticle : NSObject
 	[BaseType (typeof(NSObject))]
 	interface ICMHelpCenterArticle
@@ -394,19 +402,19 @@ namespace BarengoEngineering.Intercom
 		void PresentMessageComposer ([NullAllowed] string initialMessage);
 
 		// +(void)fetchHelpCenterCollectionsWithCompletion:(void (^ _Nonnull)(NSArray<ICMHelpCenterCollection *> * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
-		// [Static]
-		// [Export ("fetchHelpCenterCollectionsWithCompletion:")]
-		// void FetchHelpCenterCollectionsWithCompletion (Action<NSArray<ICMHelpCenterCollection>, NSError> completion);
+		//[Static]
+		//[Export ("fetchHelpCenterCollectionsWithCompletion:")]
+		//void FetchHelpCenterCollectionsWithCompletion (Action<NSArray<ICMHelpCenterCollection>, NSError> completion);
 
 		// +(void)fetchHelpCenterCollection:(NSString * _Nonnull)collectionId withCompletion:(void (^ _Nonnull)(ICMHelpCenterCollectionContent * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
 		[Static]
 		[Export ("fetchHelpCenterCollection:withCompletion:")]
 		void FetchHelpCenterCollection (string collectionId, Action<ICMHelpCenterCollectionContent, NSError> completion);
 
-		// // +(void)searchHelpCenter:(NSString * _Nonnull)searchTerm withCompletion:(void (^ _Nonnull)(NSArray<ICMHelpCenterArticleSearchResult *> * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
-		// [Static]
-		// [Export ("searchHelpCenter:withCompletion:")]
-		// void SearchHelpCenter (string searchTerm, Action<NSArray<ICMHelpCenterArticleSearchResult>, NSError> completion);
+		// +(void)searchHelpCenter:(NSString * _Nonnull)searchTerm withCompletion:(void (^ _Nonnull)(NSArray<ICMHelpCenterArticleSearchResult *> * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
+		//[Static]
+		//[Export ("searchHelpCenter:withCompletion:")]
+		//void SearchHelpCenter (string searchTerm, Action<NSArray<ICMHelpCenterArticleSearchResult>, NSError> completion);
 
 		// +(void)setDeviceToken:(NSData * _Nonnull)deviceToken failure:(void (^ _Nullable)(NSError * _Nullable))failure;
 		[Static]
@@ -462,39 +470,8 @@ namespace BarengoEngineering.Intercom
 		[Static]
 		[Export ("setNeedsStatusBarAppearanceUpdate")]
 		void SetNeedsStatusBarAppearanceUpdate ();
-
-		// +(void)presentMessenger __attribute__((deprecated("'+[Intercom presentMessenger]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom]' instead.")));
-		[Static]
-		[Export ("presentMessenger")]
-		void PresentMessenger ();
-
-		// +(void)presentHelpCenter __attribute__((deprecated("'+[Intercom presentHelpCenter]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom:HelpCenter]' instead.")));
-		[Static]
-		[Export ("presentHelpCenter")]
-		void PresentHelpCenter ();
-
-		// +(void)presentHelpCenterCollections:(NSArray<NSString *> * _Nonnull)collectionIds __attribute__((deprecated("'+[Intercom presentHelpCenterCollections:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:helpCenterCollections contentId:]' instead.")));
-		[Static]
-		[Export ("presentHelpCenterCollections:")]
-		void PresentHelpCenterCollections (string[] collectionIds);
-
-		// +(void)presentArticle:(NSString * _Nonnull)articleId __attribute__((deprecated("'+[Intercom presentArticle:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:article contentId:]' instead.")));
-		[Static]
-		[Export ("presentArticle:")]
-		void PresentArticle (string articleId);
-
-		// +(void)presentCarousel:(NSString * _Nonnull)carouselId __attribute__((deprecated("'+[Intercom presentCarousel:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:carousel contentId:]' instead.")));
-		[Static]
-		[Export ("presentCarousel:")]
-		void PresentCarousel (string carouselId);
-
-		// +(void)presentSurvey:(NSString * _Nonnull)surveyId __attribute__((deprecated("'+[Intercom presentSurvey:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:survey contentId:]' instead.")));
-		[Static]
-		[Export ("presentSurvey:")]
-		void PresentSurvey (string surveyId);
 	}
 
-	[Static]
 	partial interface Constants
 	{
 		// extern NSString *const _Nonnull IntercomUnreadConversationCountDidChangeNotification __attribute__((visibility("default")));
@@ -520,25 +497,5 @@ namespace BarengoEngineering.Intercom
 		// extern NSString *const _Nonnull IntercomDidStartNewConversationNotification __attribute__((visibility("default")));
 		[Field ("IntercomDidStartNewConversationNotification", "__Internal")]
 		NSString IntercomDidStartNewConversationNotification { get; }
-
-		// extern DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillShowNotification instead") NSString *const IntercomHelpCenterWillShowNotification __attribute__((visibility("default"))) __attribute__((deprecated("IntercomHelpCenterWillShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillShowNotification instead")));
-		[Field ("IntercomHelpCenterWillShowNotification", "__Internal")]
-		NSString IntercomHelpCenterWillShowNotification { get; }
-
-		// extern DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidShowNotification instead") NSString *const IntercomHelpCenterDidShowNotification __attribute__((visibility("default"))) __attribute__((deprecated("IntercomHelpCenterDidShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidShowNotification instead")));
-		[Field ("IntercomHelpCenterDidShowNotification", "__Internal")]
-		NSString IntercomHelpCenterDidShowNotification { get; }
-
-		// extern DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillHideNotification instead") NSString *const IntercomHelpCenterWillHideNotification __attribute__((visibility("default"))) __attribute__((deprecated("IntercomHelpCenterWillHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillHideNotification instead")));
-		[Field ("IntercomHelpCenterWillHideNotification", "__Internal")]
-		NSString IntercomHelpCenterWillHideNotification { get; }
-
-		// extern DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidHideNotification instead") NSString *const IntercomHelpCenterDidHideNotification __attribute__((visibility("default"))) __attribute__((deprecated("IntercomHelpCenterDidHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidHideNotification instead")));
-		[Field ("IntercomHelpCenterDidHideNotification", "__Internal")]
-		NSString IntercomHelpCenterDidHideNotification { get; }
-		
-		// extern const NSErrorDomain _Nonnull ICMHelpCenterDataErrorDomain;
-		[Field ("ICMHelpCenterDataErrorDomain", "__Internal")]
-		NSString ICMHelpCenterDataErrorDomain { get; }
 	}
 }

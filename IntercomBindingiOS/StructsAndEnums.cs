@@ -27,6 +27,7 @@ namespace BarengoEngineering.Intercom
     {
         home,
         helpCenter,
-        messages
+        messages,
+        tickets
     }
 }
