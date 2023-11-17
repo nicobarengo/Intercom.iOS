@@ -308,34 +308,34 @@ namespace BarengoEngineering.Intercom
 	}
 
 	// @interface IntercomContent : NSObject <IntercomContentProtocol>
-	[BaseType (typeof(NSObject))]
-	interface IntercomContent : IntercomContentProtocol
-	{
-		// +(IntercomContent * _Nonnull)articleWithId:(NSString * _Nonnull)articleId;
-		[Static]
-		[Export ("articleWithId:")]
-		IntercomContent ArticleWithId (string articleId);
-
-		// +(IntercomContent * _Nonnull)carouselWithId:(NSString * _Nonnull)carouselId;
-		[Static]
-		[Export ("carouselWithId:")]
-		IntercomContent CarouselWithId (string carouselId);
-
-		// +(IntercomContent * _Nonnull)surveyWithId:(NSString * _Nonnull)surveyId;
-		[Static]
-		[Export ("surveyWithId:")]
-		IntercomContent SurveyWithId (string surveyId);
-
-		// +(IntercomContent * _Nonnull)helpCenterCollectionsWithIds:(NSArray<NSString *> * _Nonnull)collectionIds;
-		[Static]
-		[Export ("helpCenterCollectionsWithIds:")]
-		IntercomContent HelpCenterCollectionsWithIds (string[] collectionIds);
-
-		// +(IntercomContent * _Nonnull)conversationWithId:(NSString * _Nonnull)conversationId;
-		[Static]
-		[Export ("conversationWithId:")]
-		IntercomContent ConversationWithId (string conversationId);
-	}
+	// [BaseType (typeof(NSObject))]
+	// interface IntercomContent : IntercomContentProtocol
+	// {
+	// 	// +(IntercomContent * _Nonnull)articleWithId:(NSString * _Nonnull)articleId;
+	// 	[Static]
+	// 	[Export ("articleWithId:")]
+	// 	IntercomContent ArticleWithId (string articleId);
+	//
+	// 	// +(IntercomContent * _Nonnull)carouselWithId:(NSString * _Nonnull)carouselId;
+	// 	[Static]
+	// 	[Export ("carouselWithId:")]
+	// 	IntercomContent CarouselWithId (string carouselId);
+	//
+	// 	// +(IntercomContent * _Nonnull)surveyWithId:(NSString * _Nonnull)surveyId;
+	// 	[Static]
+	// 	[Export ("surveyWithId:")]
+	// 	IntercomContent SurveyWithId (string surveyId);
+	//
+	// 	// +(IntercomContent * _Nonnull)helpCenterCollectionsWithIds:(NSArray<NSString *> * _Nonnull)collectionIds;
+	// 	[Static]
+	// 	[Export ("helpCenterCollectionsWithIds:")]
+	// 	IntercomContent HelpCenterCollectionsWithIds (string[] collectionIds);
+	//
+	// 	// +(IntercomContent * _Nonnull)conversationWithId:(NSString * _Nonnull)conversationId;
+	// 	[Static]
+	// 	[Export ("conversationWithId:")]
+	// 	IntercomContent ConversationWithId (string conversationId);
+	// }
 
 	// @interface Intercom : NSObject
 	[BaseType (typeof(NSObject))]
@@ -392,9 +392,9 @@ namespace BarengoEngineering.Intercom
 		void PresentIntercom (Space space);
 
 		// +(void)presentContent:(IntercomContent * _Nonnull)content __attribute__((swift_private));
-		[Static]
-		[Export ("presentContent:")]
-		void PresentContent (IntercomContent content);
+		// [Static]
+		// [Export ("presentContent:")]
+		// void PresentContent (IntercomContent content);
 
 		// +(void)presentMessageComposer:(NSString * _Nullable)initialMessage;
 		[Static]
@@ -402,9 +402,9 @@ namespace BarengoEngineering.Intercom
 		void PresentMessageComposer ([NullAllowed] string initialMessage);
 
 		// +(void)fetchHelpCenterCollectionsWithCompletion:(void (^ _Nonnull)(NSArray<ICMHelpCenterCollection *> * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
-		//[Static]
-		//[Export ("fetchHelpCenterCollectionsWithCompletion:")]
-		//void FetchHelpCenterCollectionsWithCompletion (Action<NSArray<ICMHelpCenterCollection>, NSError> completion);
+		// [Static]
+		// [Export ("fetchHelpCenterCollectionsWithCompletion:")]
+		// void FetchHelpCenterCollectionsWithCompletion (Action<NSArray<ICMHelpCenterCollection>, NSError> completion);
 
 		// +(void)fetchHelpCenterCollection:(NSString * _Nonnull)collectionId withCompletion:(void (^ _Nonnull)(ICMHelpCenterCollectionContent * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
 		[Static]
@@ -412,9 +412,9 @@ namespace BarengoEngineering.Intercom
 		void FetchHelpCenterCollection (string collectionId, Action<ICMHelpCenterCollectionContent, NSError> completion);
 
 		// +(void)searchHelpCenter:(NSString * _Nonnull)searchTerm withCompletion:(void (^ _Nonnull)(NSArray<ICMHelpCenterArticleSearchResult *> * _Nullable, NSError * _Nullable))completion __attribute__((swift_private));
-		//[Static]
-		//[Export ("searchHelpCenter:withCompletion:")]
-		//void SearchHelpCenter (string searchTerm, Action<NSArray<ICMHelpCenterArticleSearchResult>, NSError> completion);
+		// [Static]
+		// [Export ("searchHelpCenter:withCompletion:")]
+		// void SearchHelpCenter (string searchTerm, Action<NSArray<ICMHelpCenterArticleSearchResult>, NSError> completion);
 
 		// +(void)setDeviceToken:(NSData * _Nonnull)deviceToken failure:(void (^ _Nullable)(NSError * _Nullable))failure;
 		[Static]

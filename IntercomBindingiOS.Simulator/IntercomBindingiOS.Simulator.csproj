@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net7.0-ios</TargetFramework>
+        <TargetFramework>net8.0-ios</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>true</ImplicitUsings>
         <IsBindingProject>true</IsBindingProject>
         <DebugType>Embedded</DebugType>
         <EmbedAllSources>True</EmbedAllSources>
         <PackageId>BarengoEngineering.Intercom.iOS.Simulator</PackageId>
-        <Version>16.2.1.0</Version>
+        <Version>16.3.1.0</Version>
         <Authors>Nicolas Barengo</Authors>
         <Company>Barengo-Engineering</Company>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <Description>Intercom Binding for Xamarin.iOS (NET7) for Simulator use</Description>
+        <Description>Intercom Binding for Xamarin.iOS (NET8) for Simulator use</Description>
         <PackageProjectUrl>https://github.com/nicobarengo/Intercom.iOS</PackageProjectUrl>
         <EmbedUntrackedSources>True</EmbedUntrackedSources>
         <PackageIconUrl>https://raw.githubusercontent.com/nicobarengo/Intercom.iOS/main/intercom.png</PackageIconUrl>

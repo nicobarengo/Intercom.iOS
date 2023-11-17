@@ -12,24 +12,17 @@ Documentation for using the library inside an iOS project can be found [here](ht
 
 The source for the SDK can be found [here](https://github.com/intercom/intercom-ios). 
 
-The bindings were generated for the version **16.2.1** and requires XCode >= 15.
+The bindings were generated for the version **16.3.1** and requires XCode >= 15.
 
 
 ### How to use
 
 
-Add the flowing packages to the iOS csproj if you use a Mac with Apple Silicon
+Add the flowing packages to the iOS csproj:
 
 ```csharp
-<PackageReference Include="BarengoEngineering.Intercom.iOS" Version="16.2.1.0" />
-```
-
-
-If you use an Intel Mac add the following packages
-
-```csharp
-<PackageReference Condition="'$(Configuration)|$(Platform)' != 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS" Version="16.2.1.0" />
-<PackageReference Condition="'$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS.Simulator" Version="16.2.1.0" />
+<PackageReference Condition="'$(Configuration)|$(Platform)' != 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS" Version="16.3.1.0" />
+<PackageReference Condition="'$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator'" Include="BarengoEngineering.Intercom.iOS.Simulator" Version="16.3.1.0" />
 ```
 
 
