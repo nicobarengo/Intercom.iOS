@@ -7,7 +7,7 @@
         <DebugType>Embedded</DebugType>
         <EmbedAllSources>True</EmbedAllSources>
         <PackageId>BarengoEngineering.Intercom.iOS.Simulator</PackageId>
-        <Version>16.3.1.0</Version>
+        <Version>17.0.3.0</Version>
         <Authors>Nicolas Barengo</Authors>
         <Company>Barengo-Engineering</Company>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
