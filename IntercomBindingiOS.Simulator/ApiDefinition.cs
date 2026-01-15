@@ -174,9 +174,9 @@ namespace BarengoEngineering.Intercom
 		[Export ("articleCount")]
 		nint ArticleCount { get; set; }
 
-		// @property (nonatomic, strong) DEPRECATED_MSG_ATTRIBUTE("'sections' property is deprecated and will be removed in a future release. Use 'collections' instead.") NSArray<ICMHelpCenterSection *> * sections __attribute__((deprecated("'sections' property is deprecated and will be removed in a future release. Use 'collections' instead.")));
-		[Export ("sections", ArgumentSemantic.Strong)]
-		ICMHelpCenterSection[] Sections { get; set; }
+		// // @property (nonatomic, strong) DEPRECATED_MSG_ATTRIBUTE("'sections' property is deprecated and will be removed in a future release. Use 'collections' instead.") NSArray<ICMHelpCenterSection *> * sections __attribute__((deprecated("'sections' property is deprecated and will be removed in a future release. Use 'collections' instead.")));
+		// [Export ("sections", ArgumentSemantic.Strong)]
+		// ICMHelpCenterSection[] Sections { get; set; }
 
 		// @property (nonatomic, strong) NSArray<ICMHelpCenterCollection *> * _Nonnull collections;
 		[Export ("collections", ArgumentSemantic.Strong)]
@@ -187,8 +187,8 @@ namespace BarengoEngineering.Intercom
 		ICMHelpCenterArticleAuthor[] Authors { get; set; }
 
 		// -(instancetype _Nonnull)initWithCollectionId:(NSString * _Nonnull)collectionId title:(NSString * _Nonnull)title summary:(NSString * _Nullable)summary articles:(NSArray<ICMHelpCenterArticle *> * _Nonnull)articles articleCount:(NSInteger)articleCount sections:(NSArray<ICMHelpCenterSection *> * _Nonnull)sections authors:(NSArray<ICMHelpCenterArticleAuthor *> * _Nonnull)authors __attribute__((deprecated("'initWithCollectionId:title:summary:articles:articleCount:sections:authors:' is deprecated and will be removed in a future release. Use 'initWithCollectionId:title:summary:articles:articleCount:collections:authors:' instead.")));
-		[Export ("initWithCollectionId:title:summary:articles:articleCount:sections:authors:")]
-		NativeHandle Constructor (string collectionId, string title, [NullAllowed] string summary, ICMHelpCenterArticle[] articles, nint articleCount, ICMHelpCenterSection[] sections, ICMHelpCenterArticleAuthor[] authors);
+		// [Export ("initWithCollectionId:title:summary:articles:articleCount:sections:authors:")]
+		// NativeHandle Constructor (string collectionId, string title, [NullAllowed] string summary, ICMHelpCenterArticle[] articles, nint articleCount, ICMHelpCenterSection[] sections, ICMHelpCenterArticleAuthor[] authors);
 
 		// -(instancetype _Nonnull)initWithCollectionId:(NSString * _Nonnull)collectionId title:(NSString * _Nonnull)title summary:(NSString * _Nullable)summary articles:(NSArray<ICMHelpCenterArticle *> * _Nonnull)articles articleCount:(NSInteger)articleCount collections:(NSArray<ICMHelpCenterCollection *> * _Nonnull)collections authors:(NSArray<ICMHelpCenterArticleAuthor *> * _Nonnull)authors;
 		[Export ("initWithCollectionId:title:summary:articles:articleCount:collections:authors:")]
@@ -221,21 +221,21 @@ namespace BarengoEngineering.Intercom
 	}
 
 	// @interface ICMHelpCenterSection : NSObject
-	[BaseType (typeof(NSObject))]
-	interface ICMHelpCenterSection
-	{
-		// @property (copy, nonatomic) NSString * _Nonnull title;
-		[Export ("title")]
-		string Title { get; set; }
-
-		// @property (nonatomic, strong) NSArray<ICMHelpCenterArticle *> * _Nonnull articles;
-		[Export ("articles", ArgumentSemantic.Strong)]
-		ICMHelpCenterArticle[] Articles { get; set; }
-
-		// -(instancetype _Nonnull)initWithTitle:(NSString * _Nonnull)title articles:(NSArray<ICMHelpCenterArticle *> * _Nonnull)articles;
-		[Export ("initWithTitle:articles:")]
-		NativeHandle Constructor (string title, ICMHelpCenterArticle[] articles);
-	}
+	// [BaseType (typeof(NSObject))]
+	// interface ICMHelpCenterSection
+	// {
+	// 	// @property (copy, nonatomic) NSString * _Nonnull title;
+	// 	[Export ("title")]
+	// 	string Title { get; set; }
+	//
+	// 	// @property (nonatomic, strong) NSArray<ICMHelpCenterArticle *> * _Nonnull articles;
+	// 	[Export ("articles", ArgumentSemantic.Strong)]
+	// 	ICMHelpCenterArticle[] Articles { get; set; }
+	//
+	// 	// -(instancetype _Nonnull)initWithTitle:(NSString * _Nonnull)title articles:(NSArray<ICMHelpCenterArticle *> * _Nonnull)articles;
+	// 	[Export ("initWithTitle:articles:")]
+	// 	NativeHandle Constructor (string title, ICMHelpCenterArticle[] articles);
+	// }
 
 	[Static]
 	partial interface Constants

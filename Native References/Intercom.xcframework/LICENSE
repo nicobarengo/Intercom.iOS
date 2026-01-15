@@ -1,10 +1,5 @@
 ----------------------------------------------------------------
 
-This product includes 'AFNetworking' (https://github.com/AFNetworking/AFNetworking), which is released under the following license(s):
-    MIT <http://opensource.org/licenses/mit-license.html>
-
-----------------------------------------------------------------
-
 This product includes 'FLAnimatedImage' (https://github.com/Flipboard/FLAnimatedImage), which is released under the following license(s):
     MIT <http://opensource.org/licenses/mit-license.html>
 
@@ -28,6 +23,11 @@ This product includes 'Shimmer' (https://github.com/facebookarchive/Shimmer), wh
 This product includes 'Sentry' (https://github.com/getsentry/sentry-cocoa), which is released under the following license(s):
     MIT <http://opensource.org/licenses/mit-license.html>
     
+----------------------------------------------------------------
+
+This product includes 'TinyConstraints' (https://github.com/roberthein/TinyConstraints), which is released under the following license(s):
+    MIT <http://opensource.org/licenses/mit-license.html>
+
 ----------------------------------------------------------------
 
 All other components of this product are provided under the following license:

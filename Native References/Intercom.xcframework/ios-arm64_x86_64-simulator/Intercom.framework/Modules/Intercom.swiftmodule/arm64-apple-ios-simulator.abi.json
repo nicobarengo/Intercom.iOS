@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Intercom",
+    "printedName": "Intercom",
     "children": [
       {
         "kind": "Import",
@@ -13,6 +13,34 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Intercom"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Intercom"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Intercom"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "Intercom"
       },
       {
         "kind": "TypeDecl",
@@ -79,7 +107,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO7articleyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO7articleyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -136,7 +167,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -193,7 +227,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -258,7 +295,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -315,7 +355,70 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ticket",
+                "printedName": "ticket",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> (Swift.String) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(id: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO6ticketyADSS_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO6ticketyADSS_tcADmF",
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               }
             ],
             "declKind": "Enum",
@@ -323,10 +426,25 @@
             "mangledName": "$sSo8IntercomCAAE7ContentO",
             "moduleName": "Intercom",
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -351,7 +469,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -414,7 +531,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -483,7 +599,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -552,7 +667,156 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAuthTokens",
+            "printedName": "setAuthTokens(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8IntercomCAAE13setAuthTokens_10completionySDyS2SG_ys6ResultOyyts5Error_pGcSgtFZ",
+            "mangledName": "$sSo8IntercomCAAE13setAuthTokens_10completionySDyS2SG_ys6ResultOyyts5Error_pGcSgtFZ",
+            "moduleName": "Intercom",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeviceToken",
+            "printedName": "setDeviceToken(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8IntercomCAAE14setDeviceToken_10completiony10Foundation4DataV_ys6ResultOyyts5Error_pGcSgtFZ",
+            "mangledName": "$sSo8IntercomCAAE14setDeviceToken_10completiony10Foundation4DataV_ys6ResultOyyts5Error_pGcSgtFZ",
+            "moduleName": "Intercom",
+            "static": true,
+            "declAttributes": [
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -601,7 +865,7 @@
                         "kind": "TypeNominal",
                         "name": "ICMHelpCenterDataError",
                         "printedName": "Intercom.ICMHelpCenterDataError",
-                        "usr": "s:SC22ICMHelpCenterDataErrorLeV"
+                        "usr": "c:@E@ICMHelpCenterDataError"
                       }
                     ],
                     "usr": "s:s6ResultO"
@@ -615,7 +879,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -662,7 +925,7 @@
                         "kind": "TypeNominal",
                         "name": "ICMHelpCenterDataError",
                         "printedName": "Intercom.ICMHelpCenterDataError",
-                        "usr": "s:SC22ICMHelpCenterDataErrorLeV"
+                        "usr": "c:@E@ICMHelpCenterDataError"
                       }
                     ],
                     "usr": "s:s6ResultO"
@@ -676,7 +939,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -731,7 +993,7 @@
                         "kind": "TypeNominal",
                         "name": "ICMHelpCenterDataError",
                         "printedName": "Intercom.ICMHelpCenterDataError",
-                        "usr": "s:SC22ICMHelpCenterDataErrorLeV"
+                        "usr": "c:@E@ICMHelpCenterDataError"
                       }
                     ],
                     "usr": "s:s6ResultO"
@@ -745,7 +1007,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -768,6 +1029,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -822,5 +1097,573 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 753,
+      "length": 23,
+      "value": "\"article_citation_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 23,
+      "value": "\"article_loading_state\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1075,
+      "length": 10,
+      "value": "\"articles\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 16,
+      "value": "\"ask_a_question\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1355,
+      "length": 6,
+      "value": "\"back\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1479,
+      "length": 6,
+      "value": "\"bell\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 16,
+      "value": "\"boolean_button\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1784,
+      "length": 21,
+      "value": "\"boolean_button_left\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1968,
+      "length": 30,
+      "value": "\"boolean_button_left_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2146,
+      "length": 22,
+      "value": "\"boolean_button_right\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2333,
+      "length": 31,
+      "value": "\"boolean_button_right_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 25,
+      "value": "\"boolean_button_selected\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2674,
+      "length": 13,
+      "value": "\"camera_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2839,
+      "length": 24,
+      "value": "\"carousel_loading_state\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2983,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3125,
+      "length": 15,
+      "value": "\"close_chevron\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3290,
+      "length": 23,
+      "value": "\"close_with_background\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3437,
+      "length": 9,
+      "value": "\"compose\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3581,
+      "length": 15,
+      "value": "\"date_selector\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3728,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3885,
+      "length": 20,
+      "value": "\"external_link_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4045,
+      "length": 18,
+      "value": "\"footer_link_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4179,
+      "length": 5,
+      "value": "\"gif\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4330,
+      "length": 21,
+      "value": "\"help_center_chevron\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4478,
+      "length": 11,
+      "value": "\"help_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4642,
+      "length": 25,
+      "value": "\"home_external_link_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4809,
+      "length": 18,
+      "value": "\"homescreenFailed\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4950,
+      "length": 9,
+      "value": "\"icon_ai\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5098,
+      "length": 17,
+      "value": "\"icon_attachment\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5259,
+      "length": 20,
+      "value": "\"icon_expand_photos\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5419,
+      "length": 18,
+      "value": "\"icon_green_check\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5570,
+      "length": 14,
+      "value": "\"icon_loading\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5724,
+      "length": 18,
+      "value": "\"icon_photo_input\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5869,
+      "length": 11,
+      "value": "\"icon_plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6011,
+      "length": 13,
+      "value": "\"icon_submit\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6162,
+      "length": 17,
+      "value": "\"icon_text_input\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6319,
+      "length": 18,
+      "value": "\"icon_video_input\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6466,
+      "length": 12,
+      "value": "\"inbox_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6605,
+      "length": 11,
+      "value": "\"info_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6757,
+      "length": 18,
+      "value": "\"information_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6910,
+      "length": 15,
+      "value": "\"intercom_logo\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7051,
+      "length": 10,
+      "value": "\"launcher\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7188,
+      "length": 11,
+      "value": "\"link_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7325,
+      "length": 10,
+      "value": "\"linkedin\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7472,
+      "length": 16,
+      "value": "\"message_failed\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7632,
+      "length": 20,
+      "value": "\"message_space_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7804,
+      "length": 24,
+      "value": "\"messages_loading_state\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7944,
+      "length": 5,
+      "value": "\"mic\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8089,
+      "length": 18,
+      "value": "\"nav_icon_chevron\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8243,
+      "length": 16,
+      "value": "\"nav_icon_close\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8395,
+      "length": 16,
+      "value": "\"nav_icon_inbox\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8545,
+      "length": 15,
+      "value": "\"nav_icon_menu\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8711,
+      "length": 24,
+      "value": "\"nav_icon_search_browse\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8863,
+      "length": 11,
+      "value": "\"paperclip\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9013,
+      "length": 17,
+      "value": "\"picker_selector\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9157,
+      "length": 11,
+      "value": "\"play_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9329,
+      "length": 30,
+      "value": "\"powered_by_fin_ai_agent_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9497,
+      "length": 17,
+      "value": "\"reply_time_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9662,
+      "length": 22,
+      "value": "\"rounded_chevron_down\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9838,
+      "length": 25,
+      "value": "\"screen_action_checkmark\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9994,
+      "length": 13,
+      "value": "\"search_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10134,
+      "length": 11,
+      "value": "\"send_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10278,
+      "length": 14,
+      "value": "\"send_message\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10423,
+      "length": 13,
+      "value": "\"snooze_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10560,
+      "length": 9,
+      "value": "\"spinner\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10696,
+      "length": 11,
+      "value": "\"star_fill\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10855,
+      "length": 22,
+      "value": "\"star_selected_border\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11029,
+      "length": 24,
+      "value": "\"star_unselected_border\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11205,
+      "length": 23,
+      "value": "\"startConversationIcon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11356,
+      "length": 11,
+      "value": "\"stopwatch\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11508,
+      "length": 18,
+      "value": "\"streaming_cursor\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11682,
+      "length": 26,
+      "value": "\"submit_button_background\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11875,
+      "length": 32,
+      "value": "\"submit_button_background_clear\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12037,
+      "length": 15,
+      "value": "\"success_image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12200,
+      "length": 22,
+      "value": "\"survey_loading_state\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12365,
+      "length": 19,
+      "value": "\"teammate_location\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12515,
+      "length": 13,
+      "value": "\"ticket_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12676,
+      "length": 22,
+      "value": "\"ticket_resolved_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12848,
+      "length": 23,
+      "value": "\"ticket_submitted_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13029,
+      "length": 28,
+      "value": "\"ticket_waiting_on_you_icon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/DerivedData\/archive\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IntercomSDK-Public\/IntermediateBuildFilesPath\/IntercomSDK-Public.build\/Release-iphonesimulator\/IntercomSDK-Public.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13181,
+      "length": 9,
+      "value": "\"twitter\""
+    }
+  ]
 }
